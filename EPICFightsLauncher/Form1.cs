@@ -37,7 +37,7 @@ namespace EPICFightsLauncher
                         erreur.Text = "Veuillez entrer correctement vos infos";
                         break;
                     case "erreur_log_or_pass2":
-                        erreur.Text = "Le login ou le mot de passe sont erronés";
+                        erreur.Text = "Le login ou le mot de passe est erroné";
                         break;
                     default:
                         try
@@ -58,7 +58,7 @@ namespace EPICFightsLauncher
             {
                 Console.WriteLine(0);
                 erreur.Text = "0";
-                //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", 0);
+                //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", "0");
                 //Application.Exit();
             }
         }
