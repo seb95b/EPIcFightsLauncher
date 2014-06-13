@@ -40,7 +40,7 @@ namespace EPICFightsLauncher
                         {
                             erreur.Text = result;
                             Console.WriteLine(result);
-                            Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", result);
+                            //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", result);
                             //Application.Exit();
                         }
                         catch

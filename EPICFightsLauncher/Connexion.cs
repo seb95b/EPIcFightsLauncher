@@ -58,8 +58,8 @@ namespace EPICFightsLauncher
 
                 wb.Method = "POST";
 
-                //byte[] data = Encoding.UTF8.GetBytes("login=" + login + "&password=" + password);
                 string request = ("login=" + login + "&password=" + password);
+                byte[] data = Encoding.UTF8.GetBytes(request);
 
                 wb.ContentType = "application/x-www-form-urlencoded";
                 //wb.Connection = "close";
