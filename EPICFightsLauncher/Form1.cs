@@ -26,20 +26,24 @@ namespace EPICFightsLauncher
             {
                 Connexion connexion = new Connexion(login.Text, MD5Hashing.MD5Hash(password.Text));
                 string result = connexion.Connect();
+                Console.WriteLine(result);
 
-                switch(result)
+                switch (result)
                 {
                     case "erreur_connexion":
                         erreur.Text = "Impossible de se connecter au serveur";
                         break;
-                    case "erreur_log_or_pass":
+                    case "erreur_log_or_pass1":
+                        erreur.Text = "Veuillez entrer correctement vos infos";
+                        break;
+                    case "erreur_log_or_pass2":
                         erreur.Text = "Le login ou le mot de passe sont erronés";
                         break;
                     default:
                         try
                         {
                             erreur.Text = result;
-                            Console.WriteLine(result);
+
                             //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", result);
                             //Application.Exit();
                         }
@@ -50,11 +54,18 @@ namespace EPICFightsLauncher
                         break;
                 }
             }
+            else
+            {
+                Console.WriteLine(0);
+                erreur.Text = "0";
+                //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", 0);
+                //Application.Exit();
+            }
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.sebb-dev.org/");
+            System.Diagnostics.Process.Start("http://www.sebb-dev.org/connexion.php");
         }
 
     }
