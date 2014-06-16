@@ -66,7 +66,7 @@ namespace EPICFightsLauncher
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://www.sebb-dev.org/connexion.php");
+            System.Diagnostics.Process.Start("http://epic-fights.sebb-dev.org/inscription.php");
         }
 
     }
