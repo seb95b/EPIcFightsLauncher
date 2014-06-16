@@ -24,9 +24,10 @@ namespace EPICFightsLauncher
             //onsole.WriteLine(password.Text);
             if (login.Text != "" && password.Text != "")
             {
+                erreur.Text = "Connexion...";
                 Connexion connexion = new Connexion(login.Text, MD5Hashing.MD5Hash(password.Text));
                 string result = connexion.Connect();
-                Console.WriteLine(result);
+                //Console.WriteLine(result);
 
                 switch (result)
                 {
@@ -42,10 +43,10 @@ namespace EPICFightsLauncher
                     default:
                         try
                         {
-                            erreur.Text = result;
+                            erreur.Text = "Connecté...";
 
-                            //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", result);
-                            //Application.Exit();
+                            Process P = Process.Start("jeu_xna.exe", result);
+                            Application.Exit();
                         }
                         catch
                         {
@@ -56,10 +57,10 @@ namespace EPICFightsLauncher
             }
             else
             {
-                Console.WriteLine(0);
-                erreur.Text = "0";
-                //Process P = Process.Start("E:\\epita\\projet\\Soutenance2\\jeu_xna\\jeu_xna\\bin\\x86\\Release\\jeu_xna.exe", "0");
-                //Application.Exit();
+                //Console.WriteLine(0);
+                //erreur.Text = "0";
+                Process P = Process.Start("jeu_xna.exe", "0");
+                Application.Exit();
             }
         }
 

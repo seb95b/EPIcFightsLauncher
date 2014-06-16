@@ -120,7 +120,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox2.ImageLocation = "../../logo_epicfight.png";
+            this.pictureBox2.ImageLocation = "logo_epicfight.png";
             this.pictureBox2.Location = new System.Drawing.Point(3, 2);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";

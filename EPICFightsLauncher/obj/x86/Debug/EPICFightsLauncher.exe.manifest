@@ -54,7 +54,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>rmGHsU1Z3EwecSUK7EXxTgcEgR4=</dsig:DigestValue>
+        <dsig:DigestValue>CT6pMlRukkedQSWaxkRZAEUrOk4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -70,13 +70,4 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="logo_epicfight.png" size="133485">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>26Y70KJblpYj118lSyDYSIRM6nI=</dsig:DigestValue>
-    </hash>
-  </file>
 </asmv1:assembly>
